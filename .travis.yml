@@ -80,7 +80,7 @@ matrix:
 
 
     - os: osx
-      osx_image: xcode10.2
+      osx_image: xcode8.3
       python: "3.6-dev"
       env:
         - PYTHONPATH=$PWD
