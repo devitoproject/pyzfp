@@ -82,10 +82,12 @@ matrix:
     - os: osx
       osx_image: xcode8.3
       python: "3.6-dev"
+      before_install:
+        - brew install gcc-8
       env:
         - PYTHONPATH=$PWD
-        - CC=gcc-4.8
-        - CXX=g++-4.8
+        - CC=gcc-8
+        - CXX=g++-8
 
 
 script:
