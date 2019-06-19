@@ -79,6 +79,15 @@ matrix:
       env: PYTHONPATH=$PWD
 
 
+    - os: osx
+      osx_image: xcode8.3
+      python: "3.6-dev"
+      env:
+        - PYTHONPATH=$PWD
+        - CC=gcc-8
+        - CXX=g++-8
+
+
 script:
   - pip install -e .
   - py.test -svx test.py
